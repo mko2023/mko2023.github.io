@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #eee;
+}
+.main {
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
+	
+}
+.item {
+	max-height: 275px;
+	max-width: 490px;
+	height: calc(100vw / 2 / 16 * 9 - 5px);
+	width: calc(50vw  - 10px);
+	background-color: dodgerblue;
+	margin: 5px;
+	background-position: center;
+	background-size: cover;
+}
+.heading {
+	color: dodgerblue;
+	font-size: 48px;
+	text-align: center;
+	width: 100%;
+	padding: 30px 0;
+	font-family: 'Rubik Wet Paint', cursive;
+}
+.img_link {
+	display: block;
+	opacity: 0.6;
+	transition: opacity 0.6s liner, transform 6s liner;
+}
+.img_link:hover {
+	opacity: 1;
+	transform: scale(1.2) rotate(5deg);
+	z-index: 10;
+	box-shadow: 0 0 200px 30px rgba(255, 0, 0, 0.4);
+}
+.author{
+	width: 100%;
+	text-align: center;
+}
